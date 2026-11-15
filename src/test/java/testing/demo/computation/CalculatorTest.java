@@ -113,5 +113,10 @@ public class CalculatorTest {
         assertEquals(
             "Denominator value cannot be zero.",
             exception.getMessage());
+    }  
+    // Test 5: Division with a nonzero denominator
+    @Test
+    void divide_byNonZero() {
+    	assertEquals(5, calculator.divide(10,  2));
     }
 }
